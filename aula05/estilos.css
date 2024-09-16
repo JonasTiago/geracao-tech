@@ -1,0 +1,85 @@
+body{
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: red;
+  text-align: center;
+  padding: 10px;
+  padding-top: 35px;
+  color: #ffff;
+}
+
+h1{
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+  margin: 10px;
+  color: #ffff;
+}
+
+main {
+  margin: auto;
+  text-align: center;
+  padding: 25px 0;
+  margin-bottom: 150px;
+}
+
+article, h2{
+  width: 60%;
+  /* height: 150px; */
+  background-color: #fff;
+  margin: 25px auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+h2{
+  height: auto;
+}
+
+footer{
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  /* height: 50px; */
+  width: 100%;
+  color: #fff;
+}
+
+form {
+  margin: 15px auto;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+  height: 60vh;
+  flex-direction: column;
+  gap: 10px;
+  background-color: rgba(241, 227, 227, 0.637);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+form > label{
+  display: block;
+  margin: 0;
+  font-size: 20px;
+}
+
+input, select{
+  font-size: 15px;
+}
+
+footer p {
+  text-align: center;
+  margin: 8px;
+}
