@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    font-size: 62.5%;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body {
+    background: linear-gradient(rgb(16,16,16,0.5),rgb(25,25,25,0.5)), url(pexels-cottonbro-4489704.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 0px;
+}
+
+header {
+    width: 100%;
+    height: 7vw;
+    background: rgb(199, 183, 1, 0.974);
+    position: fixed;
+    top: 0;
+}
+
+.menu {
+    height: 100%;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+    /* padding: 10px; */
+    align-items: center;
+    font-size: 18px;
+}
+
+.logo {
+    font-size: 1.8rem;
+    letter-spacing: 0.4rem;
+    cursor: pointer;
+    padding: 4px;
+}
+.icon {
+    width: 15px;
+    height: 15px;
+    margin: auto;
+}
+
+.logo-icon {
+    display: flex;
+    position: relative;
+    padding: 10px;
+}
+
+.logo-icon::before{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 2px;
+    height: 0px;
+    background-color: rgb(4, 4, 3);
+    transition: all 1s ease;
+}
+
+.logo-fundo {
+    width: 25px;
+    height: 25px;
+    background-color: yellow;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center ;
+    padding: 5px 0; */
+}
+
+.logo-icon:hover::before {
+    height: 100%;
+    background-color: rgb(7, 7, 3);
+}
+
+
+.logo-icon::after{
+    content: '';
+    position: absolute;
+    top: 0px;
+    right:  0px;
+    width: 2px;
+    height: 0px;
+    background-color: rgb(4, 4, 3);
+    transition: all 1s ease;
+}
+
+.logo-icon:hover::after {
+    height: 100%;
+    background-color: rgb(4, 4, 1);
+}
+
+
+
+.menu .lista-menu {
+    display: flex;
+    list-style: none;
+    gap:25px;
+    align-items: center;
+}
+
+.menu .lista-menu a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    transition: 2ms ease-in;
+    position: relative;
+}
+
+.menu .lista-menu a::before{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 2px;
+    background-color: wheat;
+    transition: all 1s ease;
+}
+
+.menu .lista-menu a::after{
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 0px;
+    height: 2px;
+    background-color: wheat;
+    transition: all 1s ease;
+}
+
+.menu .lista-menu a:hover::before {
+    width: 100%;
+    background-color: yellow;
+}
+
+.menu .lista-menu a:hover::after {
+    width: 100%;
+    background-color: yellow;
+}
+
+main {
+    margin-top: 7vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgba(249, 248, 173, 0.888);
+    font-size: 20px;
+}
+
+.cards {
+    margin: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    width: 300px;
+    height: 380px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    gap: 5px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+
+.card img {
+    width: 100%;
+    height: 50%;
+    border-radius: 5px;
+}
+
+.card > div {
+    text-align: center;
+    
+}
+
+.card > div h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.card > div p {
+    font-size: 1.5rem;
+}
+
+.card button {
+    width: 35%;
+    height: 10%;
+    background-color: #c7b707;
+    /* background-color: rgb(199, 183, 1, 0.974); */
+    border:none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.card button:hover {
+    background-color: rgba(199, 182, 1, 0.738);
+    box-shadow: 1px 1px 5px rgba(185, 172, 1, 0.914);
+
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    font-size: 1.6rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin:  0 auto;
+    padding: 20px;
+}
+
+.footer-container, .footer-form{
+    flex: 1;
+    margin: 0 100px;
+}
+
+.footer-container h3{
+    margin-bottom: 10px;
+}
+
+.footer-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    width: 50%;
+}
+
+.footer-form label {
+    margin-bottom: 5px;
+}
+
+.footer-form input {
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 1.4rem;
+}
+
+.footer-form button {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: yellow;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.footer-form button:hover {
+    background-color: rgb(116, 116, 3);
+}
